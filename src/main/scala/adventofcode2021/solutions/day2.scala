@@ -13,6 +13,7 @@ class day2 extends baseSolution {
 					case "forward" :: x :: Nil => horizontal+= x.toInt
 					case "down" :: x :: Nil => vertical += x.toInt
 					case "up" :: x :: Nil => vertical -= x.toInt
+					case _ => 
 				}
 			})
 		(horizontal * vertical).toString()
@@ -33,6 +34,7 @@ class day2 extends baseSolution {
 					}
 					case "down" :: x :: Nil => aim += x.toInt
 					case "up" :: x :: Nil => aim -= x.toInt
+					case _ => 
 				}
 			})
 		(horizontal * vertical).toString()
